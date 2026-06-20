@@ -26,7 +26,7 @@ const docsSetup: { subs: Sub[] } = {
       ]
     },
     {
-      "name": "Colbalt",
+      "name": "Cobalt",
       "yearsActive": "2021",
       "logo": "wsu-logo.svg",
       "sections": []

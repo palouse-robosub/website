@@ -67,12 +67,17 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
       if (page && page.raw_url) {
         const res = await fetch(page.raw_url)
         const mdx = await res.text()
+        console.log(`Readme found for ${page.name}`)
+        console.log(page)
         return (
           <ScrollArea className="prose prose-neutral h-full max-w-none overflow-y-auto p-8">
             <MDXRemote source={mdx} options={options} />
           </ScrollArea>
         )
       } else {
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        page && console.log(`No readme for ${page.name}`)
+        console.log(page)
         return <NoReadme name={slug.pop()||"ERROR"} />
       }
   }

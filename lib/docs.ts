@@ -5,7 +5,7 @@ import path from "path";
 import {notFound} from "next/dist/client/components/not-found";
 
 export const indexDocs = async () => {
-  const octokit = new Octokit({ auth: process.env.GITHUB_PAT })
+  const octokit = new Octokit({ auth: process.env.DOCS_PAT })
 
   const docsIndex = docsSetup
 
