@@ -1,7 +1,7 @@
 ## Legacy Documentation
 #### Sloth and Darknet
 
-Since we use Darknet, there are special configurations needed. After having cloned the [vision_dev](https://github.com/PalouseRobosub/vision_dev) repository, add the following line to your .bashrc, replacing the dummy path with the path to the vision_dev/sloth directory so that sloth can create darknet files.
+Since we use Darknet, there are special configurations needed. After having cloned the [vision_dev](https://github.com/palouse-robosub/vision_dev) repository, add the following line to your .bashrc, replacing the dummy path with the path to the vision_dev/sloth directory so that sloth can create darknet files.
 
   export PYTHONPATH=/path/to/vision_dev/sloth:$PYTHONPATH
 
@@ -23,7 +23,7 @@ The following is an example command to generate said files.
 ----
 #### Getting Data to Label
 
-We use the download_data.sh and download_data_current.sh scripts from the [vision_dev](https://github.com/PalouseRobosub/vision_dev) repository to get data from the server. Make sure that you always do a git pull before getting new data because the scripts change frequently.
+We use the download_data.sh and download_data_current.sh scripts from the [vision_dev](https://github.com/palouse-robosub/vision_dev) repository to get data from the server. Make sure that you always do a git pull before getting new data because the scripts change frequently.
 
 First claim one or more batches to label from the current spreadsheet of data. The current spreadsheet is located [here](https://docs.google.com/spreadsheets/d/1j1Be_AjXxf2mgat3-XOz6fC_jkZvzBypRoEFcbkvcxA/edit?usp=sharing). Note which numbers you want.
 

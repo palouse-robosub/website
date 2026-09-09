@@ -7,6 +7,6 @@ The thruster plugin runs the thrusters for our simulated sub. It is responsible 
 # Thruster Visualizer
 When gazebo is run it starts both a server (gzserver) and a client (gzclient). Since model plugins are run on the server but visuals are run on the client gazebo messages must be sent from the thruster plugin (which is a model plugin) to the client in order to add visuals to the simulator.
 
-To visualize each thruster a very narrow cylinder is defined for each. This cylinder is then scaled and positioned each time a new thruster message is recieved. To see how the visual messages are defined see [here](https://github.com/PalouseRobosub/robosub_simulator/blob/master/src/thruster.cpp#L88).
+To visualize each thruster a very narrow cylinder is defined for each. This cylinder is then scaled and positioned each time a new thruster message is recieved. To see how the visual messages are defined see [here](https://github.com/palouse-robosub/robosub_simulator/blob/master/src/thruster.cpp#L88).
 
-To see the actual scaling and resizing steps see [UpdateVisualizers](https://github.com/PalouseRobosub/robosub_simulator/blob/master/src/thruster.cpp#L145).
+To see the actual scaling and resizing steps see [UpdateVisualizers](https://github.com/palouse-robosub/robosub_simulator/blob/master/src/thruster.cpp#L145).

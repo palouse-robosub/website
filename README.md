@@ -175,7 +175,7 @@ and request a review from [@cole-wilson](https://github.com/cole-wilson) or
 
 If you need changes to be made to the functionality of the website, find a bug, or
 need new custom React components for use on markdown pages,
-[open an issue](https://github.com/PalouseRobosub/website/issues), and we will get
+[open an issue](https://github.com/palouse-robosub/website/issues), and we will get
 right on it.
 
 ### Code Contribution
