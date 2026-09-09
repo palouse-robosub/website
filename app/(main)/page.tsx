@@ -9,7 +9,7 @@ const Page = async () => {
   const posts = await indexBlogPosts()
 
   return (
-    <main className="flex flex-col p-0 items-center home" style={{zIndex: "-1"}}>
+    <main className="flex flex-col p-0 items-center home">
       <video autoPlay muted playsInline loop className="w-full md:h-[80vh] h-auto md:max-h-none max-h-[80vh] md:object-cover object-contain object-[center_75%]">
         <source src="/vid.mp4" type="video/mp4"/>
       </video>
@@ -29,7 +29,7 @@ const Page = async () => {
           </div>
           <p className="w-1/2 text-center text-xl">
             Guppy is our brand-new flagship submarine, and is headed to
-            RoboNation's RoboSub 2026 competition in Irvine, CA, this
+            RoboNation&apos;s RoboSub 2026 competition in Irvine, CA, this
             July!
             <br/>
             <br/>
