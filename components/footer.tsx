@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-1">
             <SiGithub className="m-0" />
-            <a href="https://github.com/palouse-robosub" target="_blank" className="text-white">@PalouseRobosub</a>
+            <a href="https://github.com/palouse-robosub" target="_blank" className="text-white">@palouse-robosub</a>
           </div>
         </div>
         <div className="flex flex-col gap-1">

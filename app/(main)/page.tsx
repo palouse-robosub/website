@@ -28,12 +28,12 @@ const Page = async () => {
             <Image src="/guppy-under.jpeg" alt="Guppy" fill />
           </div>
           <p className="w-1/2 text-center text-xl">
-            Guppy is our brand-new flagship submarine, and is headed to
+            Guppy is our brand-new flagship submarine, and headed to
             RoboNation&apos;s RoboSub 2026 competition in Irvine, CA, this
             July!
             <br/>
             <br/>
-            Guppy's mechanical, electrical, and computer science architectures are entirely designed and created in-house by our team.
+            Guppy&apos;s mechanical, electrical, and computer science architectures are entirely designed and created in-house by our team.
             <br/>
             <br/>
             Able to move in all six degrees of freedom, and with advanced onboard autonomy, Guppy is truly a massive team effort.
