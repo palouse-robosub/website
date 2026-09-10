@@ -31,7 +31,7 @@ jobs:
   # Build job
   build:
     env:
-      GITHUB_PAT: ${{ secrets.DOCS_PAT }}
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
