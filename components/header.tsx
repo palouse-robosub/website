@@ -11,7 +11,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className={`z-10 w-full flex flex-col p-2.5 items-center justify-center text-white ${pathname === '/' ? "bg-transparent absolute" : "bg-[#A60F2D] relative"}`}>
+    <header className={`w-full flex flex-col p-2.5 items-center justify-center text-white ${pathname === '/' ? "bg-transparent absolute" : "bg-[#A60F2D] relative"}`}>
       <div className="justify-between items-center relative">
         <div className="border border-white rounded-md items-center justify-center p-1 cursor-pointer md:hidden" onClick={() => setMenuOpen(!menuOpen)}><Menu/></div>
         <div className="md:flex hidden h-full items-center gap-12 text-l font-medium">

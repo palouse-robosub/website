@@ -8,7 +8,7 @@ The submarine currently has 7 different types of sensors: accelerometer, gyrosco
 
 ### 3-Axis Sensors
 
-The accelerometer, gyroscope, and magnetometer are 3-axis sensors, meaning they report X, Y, and Z values. The coordinate system is the same as the one defined for movement. See the [Movement](https://github.com/PalouseRobosub/robosub/wiki/Movement) section for details. Positive X is to the left of the sub, positive Y is to the front, and positive Z is down. Because the sensors may not be mounted in the proper orientation, translation is needed. This shall happen in the lowest level (''sensor_microcontroller_interface.py''), so all other computer modules can assume the sensors are orientated correctly.
+The accelerometer, gyroscope, and magnetometer are 3-axis sensors, meaning they report X, Y, and Z values. The coordinate system is the same as the one defined for movement. See the [Movement](https://github.com/palouse-robosub/robosub/wiki/Movement) section for details. Positive X is to the left of the sub, positive Y is to the front, and positive Z is down. Because the sensors may not be mounted in the proper orientation, translation is needed. This shall happen in the lowest level (''sensor_microcontroller_interface.py''), so all other computer modules can assume the sensors are orientated correctly.
 
 #### Accelerometer
 

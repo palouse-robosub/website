@@ -1,16 +1,21 @@
 {
   description = "NodeJS dev shell";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.utils.url = "github:numtide/flake-utils";
   
-  outputs = { self, nixpkgs }: let
-    pkgs = nixpkgs.legacyPackages.x86_64-linux;
-  in {
-    devShells.x86_64-linux.default = pkgs.mkShell {
-      buildInputs = with pkgs; [
-        nodejs
-        pnpm
-        vtsls
-      ];
-    };
-  };
+  outputs = { self, nixpkgs, utils }: 
+    utils.lib.eachDefaultSystem (system:
+      let
+        pkgs = import nixpkgs { inherit system; };
+      in 
+      {
+        devShells.default =  with pkgs; mkShell {
+          buildInputs = [
+            nodejs
+            pnpm
+            vtsls
+          ];
+        };
+      }
+    );
 }

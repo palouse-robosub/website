@@ -9,7 +9,7 @@ const Page = async () => {
   const posts = await indexBlogPosts()
 
   return (
-    <main className="flex flex-col p-0 items-center home" style={{zIndex: "-1"}}>
+    <main className="flex flex-col p-0 items-center home">
       <video autoPlay muted playsInline loop className="w-full md:h-[80vh] h-auto md:max-h-none max-h-[80vh] md:object-cover object-contain object-[center_75%]">
         <source src="/vid.mp4" type="video/mp4"/>
       </video>
@@ -28,12 +28,12 @@ const Page = async () => {
             <Image src="/guppy-under.jpeg" alt="Guppy" fill />
           </div>
           <p className="w-1/2 text-center text-xl">
-            Guppy is our brand-new flagship submarine, and is headed to
-            RoboNation's RoboSub 2026 competition in Irvine, CA, this
+            Guppy is our brand-new flagship submarine, and headed to
+            RoboNation&apos;s RoboSub 2026 competition in Irvine, CA, this
             July!
             <br/>
             <br/>
-            Guppy's mechanical, electrical, and computer science architectures are entirely designed and created in-house by our team.
+            Guppy&apos;s mechanical, electrical, and computer science architectures are entirely designed and created in-house by our team.
             <br/>
             <br/>
             Able to move in all six degrees of freedom, and with advanced onboard autonomy, Guppy is truly a massive team effort.

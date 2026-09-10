@@ -29,7 +29,7 @@ const OfficerBio = ({ children, imageSrc }: { children: React.ReactNode, imageSr
     <div
       className="bioWrapper [&_a]:not-prose"
     >
-      <Image src={imageSrc} alt="" height={250} width={250} className="object-contain !m-0" />
+      <Image src={imageSrc} alt="" height={250} width={250} className="object-contain m-0! aspect-square" />
       <div className="">
         {children}
       </div>

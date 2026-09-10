@@ -68,7 +68,7 @@ Test it:
 
 # Generating Training Data
 To label our images, we use sloth. For more details, see (link). Sloth creates a json file that describes the labels for each image. The TFODA requires the example images and their labels to be packaged into a specific file format called a TFrecord. 
-We have a [python script](https://github.com/PalouseRobosub/vision_dev/blob/master/sloth_to_tfrecord.py) for converting the sloth json format in TFrecord files in our vision_dev repository. To create a TFrecord file, you need both the json file containing the labels, and the images the json file refers to. Usage is shown below:
+We have a [python script](https://github.com/palouse-robosub/vision_dev/blob/master/sloth_to_tfrecord.py) for converting the sloth json format in TFrecord files in our vision_dev repository. To create a TFrecord file, you need both the json file containing the labels, and the images the json file refers to. Usage is shown below:
   ./sloth_to_tf_record.py /\<input json file\> /\<output directory\>
 sloth_to_tf_record.py uses the json file to find the image files, so if the script can't find images, look at the json file to see the path that it uses to locate each image. sloth_to_tfrecord.py actually generates several files which get stored in /\<output directory\>, which must already exist (the script will not create the directory if it does not exist). The output files are:
   * label_map.pbtext - defines all the image classes

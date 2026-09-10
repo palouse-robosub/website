@@ -12,7 +12,7 @@ Message: [ geometry_msgs/Quaternion ](http://docs.ros.org/api/geometry_msgs/html
 The current orientation of the sub, given as a quaternion. Any code wanting to know the sub's orientation should use this topic, not /orientation/rpy.
 
 ### /pretty/orientation
-Message: [ robosub/Euler ](https://github.com/PalouseRobosub/robosub/blob/master/msg/Euler.msg ) \\
+Message: [ robosub/Euler ](https://github.com/palouse-robosub/robosub/blob/master/msg/Euler.msg ) \\
 The current orientation of the sub, given in roll, pitch, yaw. This is meant just for human readability of the sub's orientation, code should use the /orientation topic.
 
 ### /depth
@@ -21,21 +21,21 @@ The current depth of the sub.
 
 ## Movement
 ### /thruster
-Message: [robosub/thruster](https://github.com/PalouseRobosub/robosub/blob/master/msg/thruster.msg) \\
+Message: [robosub/thruster](https://github.com/palouse-robosub/robosub/blob/master/msg/thruster.msg) \\
 Dynamic array of commands going to the thrusters. Order of the thrusters is dependent on their order in the settings file.
 
 
 ### /control
-Message: [ robosub/control ]( https://github.com/PalouseRobosub/robosub/blob/master/msg/control.msg ) \\
+Message: [ robosub/control ]( https://github.com/palouse-robosub/robosub/blob/master/msg/control.msg ) \\
 Send messages to this topic to move the sub around, the control system subscribes to this topic.
 
 
 ### /joystick_driver
-Message: [ robosub/joystick]( https://github.com/PalouseRobosub/robosub/blob/master/msg/joystick.msg)
+Message: [ robosub/joystick]( https://github.com/palouse-robosub/robosub/blob/master/msg/joystick.msg)
 This is the raw joystick state, published by the joystick driver. Shows the current state of all axes and buttons on the joystick.
 
 ### /gamepad_driver
-Message: [ robosub/gamepad](https://github.com/PalouseRobosub/robosub/blob/master/msg/gamepad.msg )
+Message: [ robosub/gamepad](https://github.com/palouse-robosub/robosub/blob/master/msg/gamepad.msg )
 This is the raw gamepad state, published by the gamepad driver. Shows the current state of all axes and buttons on the gamepad.
 
 ## Vision
@@ -45,7 +45,7 @@ Message: [ wfov_camera_msgs/WFOVImage](https://github.com/ros-drivers/pointgrey_
 Images from our cameras.
 
 ### /vision
-Message: [ rs_yolo/DetectionArray](https://github.com/PalouseRobosub/rs_yolo/blob/master/msg/DetectionArray.msg ) \\
+Message: [ rs_yolo/DetectionArray](https://github.com/palouse-robosub/rs_yolo/blob/master/msg/DetectionArray.msg ) \\
 Results of the deep vision processing system. It's a list detailing all the objects it sees.
 
 ## Hydrophones
